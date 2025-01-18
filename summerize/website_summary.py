@@ -83,7 +83,7 @@ def summarize(url):
 # Display the summarized content
 
 
-summary = summarize("https://edwarddonner.com")
+summary = summarize("https://microsoft.com")
 
 display(Markdown(summary))
 print(summary)
