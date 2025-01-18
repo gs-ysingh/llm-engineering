@@ -1,4 +1,5 @@
 # Problem: Use OLLAMA to summerize a given web page
+# Prerequisites: Install OLLAMA locally
 
 # Imports
 import os
@@ -80,4 +81,10 @@ def summarize(url):
     return response.json()['message']['content']
 
 # Display the summarized content
-display(Markdown(summarize("https://www.microsoft.com/")))
+
+
+summary = summarize("https://edwarddonner.com")
+
+display(Markdown(summary))
+print(summary)
+
